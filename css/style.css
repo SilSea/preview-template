@@ -1,0 +1,240 @@
+body{
+    background-color: #ddd;
+    padding: 0 !important;
+}
+.container {
+    width: 100%;
+}
+iframe{
+    width: 100%;
+}
+/* SetButtonSubmission */
+@media screen and (min-width: 320px) {
+    .pkp_block.block_make_submission > .content:nth-of-type(1){
+        text-align: center;
+    }
+    .pkp_block.block_make_submission > .content:nth-of-type(1) > .block_make_submission_link{
+        font-weight: bold;
+        text-align: center;
+        background-color: #dd4814;
+        border-color: #bf3e11;
+    }
+    .pkp_block.block_make_submission > .content:nth-of-type(1) > .block_make_submission_link:hover{
+        color: #dd4814;
+        background-color: #ddd;
+        border-color: #ddd;
+        text-decoration: none;
+    }
+    .cmp_breadcrumbs > .breadcrumb{
+        margin-top: 20px;
+    }
+}
+/* ตั้งแต่จอ 768px เป็นต้นไป */
+@media screen and (min-width: 768px) {
+    /* WebStructure */
+    .pkp_structure_page {
+        margin: 0;
+    }
+    /* Navbar */
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand, .header_view>.container .navbar-brand, .header_view>.container-fluid .navbar-brand {
+        margin: 0;
+    }
+    /* สร้างกรอบให้เมนู */
+    header#headerNavigationContainer {
+        border-top-color: #bf3e11;
+        border-top-left-radius: 1.5%;
+        border-top-right-radius: 1.5%;
+    }
+    /* เปลี่ยนสี row บนสุด */
+    .container-fluid > .row{
+        background-color: #dd4814;
+        border-left-color: #bf3e11;
+        border-right-color: #bf3e11;
+    }
+    .container-fluid:nth-of-type(2){
+        display: flex;
+        flex-direction: column;
+        background-color: #dd4814;
+        border-left-color: #bf3e11;
+        border-right-color: #bf3e11;
+        padding: 0;
+    }
+    .navbar-default, .header_view {
+        border: 0;
+    }
+    nav#nav-menu {
+        padding: 0;
+        margin: 0;
+        background-color: #ffffff;
+    }
+    nav#nav-menu > ul > li > a,nav#nav-menu > div > form > button.btn.btn-default {
+        color: black;
+        font-size: 1.4vw;
+        font-weight: bold;
+        background-color: transparent;
+        border: 0;
+        border-bottom-width: 3px;
+    }
+    nav#nav-menu > ul > li > a:hover,nav#nav-menu > ul > li > a:focus,nav#nav-menu > div > form > button.btn.btn-default:hover,nav#nav-menu > div > form > button.btn.btn-default:focus{
+        color: #dd4814;
+        background-color:transparent;
+        border-bottom: 3px solid #dd4814;
+    }
+    nav#nav-menu > div > form {
+        padding: 0;
+    }
+    nav#nav-menu > div > form > button.btn.btn-default{
+        padding: 17px 15px 15px 17px;
+    }
+    .dropdown-menu{
+        background-color: #dd4814;
+    }
+    .dropdown-menu>li>a{
+        color: #fff;
+        font-weight: bold;
+    }
+    .dropdown-menu>li>a:hover{
+        color: #dd4814;
+        background-color: #ddd;
+    }
+    /* SearchMenu */
+    .pull-md-right{
+        float: none;
+    } 
+    nav#nav-menu > div > form > div > input.form-control {
+        display: none;
+    }
+    form.navbar-form.navbar-left{
+        margin: 0;
+    }
+    /* Content Conatiner */
+    .pkp_structure_content.container {
+        background-color: white;
+    }
+}
+@media screen and (min-width: 991px) {
+    .pkp_block.block_make_submission{
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 964px) {
+    nav#nav-menu > div > form > button.btn.btn-default{
+        padding: 15px 15px 15px 17px;
+    }
+}
+@media screen and (min-width: 1103px) {
+    /* NewLayout */
+    .pkp_structure_page {
+        margin: 1% 10% 1% 10%;
+    }
+    nav#nav-menu > ul > li > a,nav#nav-menu > div > form > button.btn.btn-default {
+        color: black;
+        font-size: 1.2vw;
+        font-weight: bold;
+        background-color: transparent;
+        border: 0;
+        border-bottom-width: 3px;
+    }
+    div#customblock-journalinfo > div > div > p{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 1138px) {
+    /* Navbar Font */
+    nav#nav-menu > ul > li > a,nav#nav-menu > div > form > button.btn.btn-default {
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: transparent;
+        border: 0;
+        border-bottom-width: 3px;
+    }
+    div#customblock-journalinfo > div > div > p{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1697px){
+    /* NewLayout */
+    .pkp_structure_page {
+        margin: 1% 24% 1% 24%;
+    }
+}
+
+
+/* จอเล็กสุด */
+@media screen and (max-width: 375px) {
+    /* ปรับขนาดตัวหนังสือ Title */
+    .navbar-brand{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar-default, .header_view {
+        border: 0;
+    }
+    nav#nav-menu{
+        background-color: white;
+    }
+    nav#nav-menu > ul > li > a,nav#nav-menu > div > form > button.btn.btn-default {
+        color: black;
+        font-weight: bold;
+        background-color: transparent;
+        border: 0;
+        border-bottom-width: 3px;
+    }
+    nav#nav-menu > ul > li > a:hover,nav#nav-menu > ul > li > a:focus,nav#nav-menu > div > form > button.btn.btn-default:hover,nav#nav-menu > div > form > button.btn.btn-default:focus{
+        color: #dd4814;
+        background-color:transparent;
+        border-bottom: 3px solid #dd4814;
+    }
+    .dropdown-menu{
+        background-color: #dd4814;
+    }
+    .navbar-nav .open .dropdown-menu {
+        background-color: #dd4814;
+    }
+    .dropdown-menu>li>a{
+        color: #fff;
+        font-weight: bold;
+    }
+    .dropdown-menu>li>a:hover{
+        color: #dd4814;
+        background-color: #ddd;
+    }
+    /* SearchMenu */
+    .pull-md-right{
+        float: none;
+    } 
+    form.navbar-form.navbar-left > div > input {
+        display: none;
+    }
+    form.navbar-form.navbar-left{
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    form.navbar-form.navbar-left > button.btn.btn-default{
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 15px;
+        width: 100%;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 991px) {
+    /* Content Conatiner */
+    .pkp_structure_content.container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    .pkp_structure_main{
+        align-self: center
+    }
+    aside#sidebar {
+        align-self: center;
+        width: 100%;
+    }
+}
