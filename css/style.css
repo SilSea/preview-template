@@ -8,8 +8,20 @@ body{
 iframe{
     width: 100%;
 }
-/* SetButtonSubmission */
+/* SetLogoWhenSmall */
+a.navbar-brand.navbar-brand-logo {
+    padding: 0;
+}
+.navbar-brand-logo img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+/* ตั้งแต่จอ 320px เป็นต้นไป  */
 @media screen and (min-width: 320px) {
+    /* SetButtonSubmission */
     .pkp_block.block_make_submission > .content:nth-of-type(1){
         text-align: center;
     }
@@ -29,6 +41,7 @@ iframe{
         margin-top: 20px;
     }
 }
+
 /* ตั้งแต่จอ 768px เป็นต้นไป */
 @media screen and (min-width: 768px) {
     /* WebStructure */
@@ -37,7 +50,12 @@ iframe{
     }
     /* Navbar */
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand, .header_view>.container .navbar-brand, .header_view>.container-fluid .navbar-brand {
-        margin: 0;
+        margin: 15px;
+    }
+    .row > nav {
+        position: absolute;
+        right: 5px;
+        top: 16px;
     }
     /* สร้างกรอบให้เมนู */
     header#headerNavigationContainer {
@@ -59,6 +77,16 @@ iframe{
         border-right-color: #bf3e11;
         padding: 0;
     }
+    .navbar-header{
+        height: 138px;
+    }
+    .navbar-brand-logo img{
+        display: block;
+        max-width: none;
+        max-height: none;
+        width: 700px;
+        height: auto;
+    }
     .navbar-default, .header_view {
         border: 0;
     }
@@ -69,7 +97,7 @@ iframe{
     }
     nav#nav-menu > ul > li > a,nav#nav-menu > div > form > button.btn.btn-default {
         color: black;
-        font-size: 1.4vw;
+        font-size: 1.3vw;
         font-weight: bold;
         background-color: transparent;
         border: 0;
@@ -130,7 +158,7 @@ iframe{
     }
     nav#nav-menu > ul > li > a,nav#nav-menu > div > form > button.btn.btn-default {
         color: black;
-        font-size: 1.2vw;
+        font-size: 1.1vw;
         font-weight: bold;
         background-color: transparent;
         border: 0;
@@ -140,7 +168,7 @@ iframe{
         font-size: 12px;
     }
 }
-@media screen and (min-width: 1138px) {
+@media screen and (min-width: 1198px) {
     /* Navbar Font */
     nav#nav-menu > ul > li > a,nav#nav-menu > div > form > button.btn.btn-default {
         color: black;
@@ -162,17 +190,25 @@ iframe{
 }
 
 
-/* จอเล็กสุด */
-@media screen and (max-width: 375px) {
-    /* ปรับขนาดตัวหนังสือ Title */
-    .navbar-brand{
-        font-size: 4vw;
-    }
-}
 @media screen and (max-width: 768px) {
     /* Navbar */
     .navbar-default, .header_view {
         border: 0;
+    }
+    .navbar-brand-logo{
+        margin: 15px;
+    }
+    .navbar-toggle {
+        position: absolute;
+        right: 0;
+        padding: 9px 10px;
+        margin-right: 15px;
+        margin-top: 26px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
     }
     nav#nav-menu{
         background-color: white;
@@ -222,6 +258,25 @@ iframe{
         padding-bottom: 15px;
         width: 100%;
         text-align: left;
+    }
+}
+/* จอเล็กสุด */
+@media screen and (max-width: 375px) {
+    /* ปรับขนาดตัวหนังสือ Title */
+    .navbar-brand{
+        font-size: 4vw;
+    }
+    .navbar-toggle {
+        position: absolute;
+        right: 0;
+        padding: 9px 10px;
+        margin-right: 15px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
     }
 }
 @media screen and (max-width: 991px) {
