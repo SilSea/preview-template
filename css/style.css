@@ -1,6 +1,13 @@
+/* fontTest */
+/* @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Chokokutai&display=swap'); */
+
 body{
     background-color: #ddd;
     padding: 0 !important;
+
+    /* font-family: "Chokokutai", system-ui;
+    font-weight: 400;
+    font-style: normal; */
 }
 .container {
     width: 100%;
@@ -17,6 +24,45 @@ a.navbar-brand.navbar-brand-logo {
     max-height: 100%;
     max-width: 100%;
     width: auto;
+    height: auto;
+}
+/* ViewAll */
+a.btn.btn-primary.read-more {
+    margin-bottom: 15px;
+}
+/* Sidebar */
+.panel, .pkp_block {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/* Sidebar Title */
+.panel-default>.panel-heading, .pkp_block .title {
+    background-color: transparent;
+    border-color: #ddd; 
+    font-size: large;
+    font-weight: bolder;
+}
+.panel-heading, .pkp_block .title {
+    border-bottom: none; 
+}
+.list-group-item, .pkp_block ul li {
+    border: none;
+    padding: 0px 15px 10px 15px;
+}
+div#customblock-indexed-in > div > p {
+    margin-bottom: 15px;
+}
+div#customblock-indexed-in > div > p > strong {
+    font-size: large;
+    font-weight: bolder;
+}
+div#customblock-indexed-in > div > p > a {
+    display: flex;
+    justify-content: center;
+}
+div#customblock-indexed-in > div > p > a > img {
+    width: 70%;
     height: auto;
 }
 /* ตั้งแต่จอ 320px เป็นต้นไป  */
